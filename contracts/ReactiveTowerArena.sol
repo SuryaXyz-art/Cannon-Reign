@@ -10,6 +10,7 @@ contract ReactiveTowerArena {
     mapping(address => uint256) public playerSkin;
     mapping(address => uint256) public playerMaxCombo;
     mapping(address => bool) public playerUsedOverdrive;
+    mapping(address => uint256) public playerLevel;
 
     // ── Global State ──
     uint256 public globalHighScore;
@@ -49,6 +50,8 @@ contract ReactiveTowerArena {
     );
     event NewGlobalLeader(address indexed player, uint256 score);
     event SkinPurchased(address indexed player, uint256 tier);
+    event ComboAchieved(address indexed player, uint256 comboCount, uint256 bonusScore);
+    event LevelCompleted(address indexed player, uint256 level, uint256 timeBonus);
 
     constructor() {
         owner = msg.sender;
@@ -91,6 +94,15 @@ contract ReactiveTowerArena {
             globalLeader = msg.sender;
             emit NewGlobalLeader(msg.sender, score);
         }
+    }
+
+    function completeLevel(uint256 level, uint256 timeBonus) public {
+        playerLevel[msg.sender] = level;
+        emit LevelCompleted(msg.sender, level, timeBonus);
+    }
+
+    function reportCombo(uint256 comboCount, uint256 bonusScore) public {
+        emit ComboAchieved(msg.sender, comboCount, bonusScore);
     }
 
     // ── Skin Purchase ──

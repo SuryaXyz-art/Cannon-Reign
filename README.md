@@ -128,6 +128,21 @@ contract.on("NewGlobalLeader", (player, score) => {
 
 This is NOT polling. Somnia's sub-second finality combined with WebSocket event subscriptions means updates arrive within milliseconds of block confirmation.
 
+## Deployment Order (for Somnia Reactivity)
+
+Run in this exact order:
+
+1. `npm run deploy:testnet` → deploys ReactiveTowerArena, note the address
+2. Set `GAME_CONTRACT_ADDRESS=<address from step 1>` in `.env`
+3. `npm run deploy:reactor` → deploys CannonReignReactor, note the address  
+4. Set `REACTOR_CONTRACT_ADDRESS=<address from step 3>` in `.env`
+5. Set `VITE_CONTRACT_ADDRESS` and `VITE_REACTOR_CONTRACT_ADDRESS` in `frontend/.env`
+6. `npm run subscription:create` → creates the on-chain subscription (requires 32+ SOMI)
+7. `npm run subscription:list` → verify subscription is active
+8. `cd frontend && npm run dev` → start frontend
+
+The on-chain reactor now automatically reacts to all game events — no backend required.
+
 ---
 
 ## Setup Instructions

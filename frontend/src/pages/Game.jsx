@@ -2,6 +2,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import GameCanvas from "../components/GameCanvas";
 import Leaderboard from "../components/Leaderboard";
 import ReactivityStatus from "../components/ReactivityStatus";
+import ReactorPanel from "../components/ReactorPanel";
 import { SKIN_NAMES, SKIN_PRICES } from "../utils/contract";
 
 export default function Game({
@@ -206,9 +207,10 @@ export default function Game({
                         </div>
                     </div>
 
-                    {/* Sidebar */}
                     <div className="space-y-4">
                         <Leaderboard topPlayers={topPlayers} globalLeader={globalLeader} newLeaderAlert={newLeaderAlert} compact />
+
+                        <ReactorPanel playerAddress={account} />
 
                         <div className="glass-panel-solid p-4">
                             <h3 className="font-orbitron text-xs text-neon-cyan tracking-widest mb-3">CONTROLS</h3>
