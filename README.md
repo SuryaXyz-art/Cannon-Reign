@@ -17,14 +17,6 @@ The Somnia Reactivity Mini Hackathon invites developers and builders to explore 
 
 This hackathon is a chance to experiment, prototype, and showcase potential use cases of this breakthrough technology to the Web3 developer ecosystem.
 
-### Timeline
-- **Hackathon Kickoff:** Feb 25th, 2026
-- **Submission Window:** Feb 25th – March 20th, 2026
-
-### Prizes
-- 300$ worth SOMI tokens to each winner project.
-- Social media spotlight for winner projects and mentorship support.
-- Select projects will be converted into tutorials, case studies, and reference implementations to support future developers.
 
 ### Track
 There is one open track. Your project must integrate Somnia Reactivity to build a functional prototype that utilises the SDK in a meaningful way.
