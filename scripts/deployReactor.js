@@ -9,9 +9,10 @@ async function main() {
 
   const Reactor = await hre.ethers.getContractFactory("CannonReignReactor");
   const reactor = await Reactor.deploy(GAME_CONTRACT_ADDRESS);
-  await reactor.deployed();
+  await reactor.waitForDeployment();
 
-  console.log("✅ CannonReignReactor deployed to:", reactor.address);
+  const address = await reactor.getAddress();
+  console.log("✅ CannonReignReactor deployed to:", address);
   console.log("Save this address as REACTOR_CONTRACT_ADDRESS in your .env");
 }
 
