@@ -11,7 +11,7 @@ const REACTOR_ABI = [
 ];
 
 const SOMNIA_RPC = "https://dream-rpc.somnia.network";
-const SOMNIA_WS = "wss://dream-rpc.somnia.network";
+const SOMNIA_WS = "wss://dream-rpc.somnia.network/ws";
 
 export function useOnChainReactivity(reactorAddress, playerAddress) {
   const [reactiveStats, setReactiveStats] = useState({
