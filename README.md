@@ -9,6 +9,43 @@
 
 ---
 
+## Somnia Reactivity Mini Hackathon
+
+Welcome to Somnia Reactivity Mini Hackathon, a global, online event taking place from Feb 25th to March 20th, 2026.
+
+The Somnia Reactivity Mini Hackathon invites developers and builders to explore Somnia Native On-chain Reactivity and build the first generation of truly reactive dApps on blockchain. Reactivity isn't just an incremental improvement, it's a paradigm shift that enables real-time, trustless and decentralised reactions without relying on external systems.
+
+This hackathon is a chance to experiment, prototype, and showcase potential use cases of this breakthrough technology to the Web3 developer ecosystem.
+
+### Timeline
+- **Hackathon Kickoff:** Feb 25th, 2026
+- **Submission Window:** Feb 25th – March 20th, 2026
+
+### Prizes
+- 300$ worth SOMI tokens to each winner project.
+- Social media spotlight for winner projects and mentorship support.
+- Select projects will be converted into tutorials, case studies, and reference implementations to support future developers.
+
+### Track
+There is one open track. Your project must integrate Somnia Reactivity to build a functional prototype that utilises the SDK in a meaningful way.
+
+### Judging criteria
+- **Technical Excellence** - Is the project functional, stable, and well-implemented using Reactivity SDK?
+- **Real-Time UX** - Does it leverage the real time feature of Reactivity effectively?
+- **Somnia Integration** - Is it Deployed on Somnia testnet?
+- **Potential Impact** - Does it have potential to evolve into a real product or ecosystem contribution?
+
+### About Somnia
+Somnia is a high-performance, cost-efficient EVM-compatible Layer 1 blockchain capable of processing over 1,000,000 transactions per second (TPS) with sub-second finality. It is suitable for serving millions of users and building real-time mass-consumer applications like games, social applications, metaverses, and more, all fully on-chain.
+
+### Links & Resources
+- **Official Docs:** https://docs.somnia.network
+- **Reactivity Info:** https://docs.somnia.network/developer/reactivity
+- **X Profile:** https://x.com/SomniaDevs
+- **Telegram community:** https://t.me/+XHq0F0JXMyhmMzM0
+
+---
+
 ## What is Reactive Tower Arena?
 
 A skill-based arcade shooter where gameplay, competition, and leaderboard synchronization are powered entirely by on-chain event-driven architecture.
